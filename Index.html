@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="slider">
+            <div class="slide current">
+                <img src="portfolio-image.jpg" alt="Portfolio Image">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Discover my work and skills</p>
+            </div>
+            <div class="slide">
+                <img src="portfolio-image.jpg" alt="Portfolio Image">
+                <h1>Software Development</h1>
+                <p>Crafting high-quality software solutions</p>
+            </div>
+            <div class="slide">
+                <img src="portfolio-image.jpg" alt="Portfolio Image">
+                <h1>Project Management</h1>
+                <p>Delivering projects on time and within budget</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Past Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Description of project 3</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <h2>Countries I've Worked In</h2>
+        <div id="googleMap"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span></p>
+    </footer>
+</body>
+</html>
